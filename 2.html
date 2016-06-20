@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>css3part2</title>
+	<style type="text/css">
+		#div1{
+			margin: 25px;
+			height: 30px ;
+			-webkit-transition-property: width ;
+			-webkit-transition-duration: 1s ;
+			-webkit-transition-timing-function: linear;
+			width: 100px ;
+			background-color: orange;
+		}
+		#div1:hover {
+			width: 300px ;
+		}
+		#div2{
+					background:-webkit-linear-gradient(orange,green,blue);
+					background:-o-linear-gradient(orange,green);
+					background:-moz-linear-gradient(orange,green);
+					height: 200px ;
+			width: 200px ;
+			-webkit-animation-name: er ;
+			-webkit-animation-duration: 2s ;
+			-webkit-animation-iteration-count: infinite;
+				}
+				#div3{
+					background:-webkit-radial-gradient(orange,green,blue);
+					background:-moz-radial-gradient(orange,green);
+					background:-o-radial-gradient(orange,green);
+			height: 200px ;
+			width: 200px ;
+		}
+		#div4{
+			height: 30px ;
+			width: 300px ;
+			position: relative ; 
+			background-color: red;
+			-webkit-animation-name: example ;
+			-webkit-animation-duration: 5s ;
+			-webkit-animation-iteration-count: infinite;
+		}
+		@-webkit-keyframes example {
+			from{background-color: red ; left:2px ; top:4px ;}
+			to{background-color: yellow ;} 	
+			}	
+		@-webkit-keyframes er {
+			from {background: -webkit-linear-gradient(orange,green,blue) ;}
+			to{background: -webkit-linear-gradient(black,grey,blue) ; }
+		}
+			</style>
+</head>
+<body>
+	
+	<center>
+		<div id="div1">element1</div>
+		<br>
+		
+		<div id="div2">Linear gradient</div>
+		<br><br>
+		
+		<div id="div3">Radial gradient</div>
+		<br>
+		
+		<div id="div4">animation</div>
+	</center>
+
+</body>
+</html>
